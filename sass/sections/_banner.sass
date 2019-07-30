@@ -1,0 +1,192 @@
+.banner
+  align-items: flex-end
+  padding-top: 275px
+
+  background: url("../img/banner/banner.png") no-repeat top left
+  &__under
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    margin-top: -53px
+  &-attention
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 230px
+    height: 230px
+
+    text-align: center
+
+    background-color: rgba(#fff200, 0.7)
+    border-radius: 50%
+    &__title
+      width: 144px
+
+      font-family: "Trebuchet MS"
+      font-size: 25px
+      font-weight: 700
+      line-height: 30px
+    &__subtitle
+      margin-top: 9px
+      margin-bottom: -4px
+
+      font-family: "Trebuchet MS"
+      font-size: 14px
+      font-weight: 700
+      line-height: 30px
+    &-code
+      padding: 3px 7px 3px 6px
+
+      font-family: "Trebuchet MS"
+      font-size: 24px
+      font-weight: 700 
+
+      color: #ffffff 
+      background-color: #000000
+  &__attention
+    margin-left: 28px
+    margin-bottom: 80px
+.hotel
+  &-review
+    &__top
+      display: flex
+      align-items: center
+      margin-top: 48px
+      margin-bottom: 25px
+
+      font-family: "Trebuchet MS"
+    &__bottom
+      display: flex
+      justify-content: space-between
+      align-items: center
+    &__rating
+      padding: 17px 7px
+
+      font-family: "Trebuchet MS"
+      font-size: 24px
+      font-weight: 700
+      line-height: 18px
+      
+      color: #ffffff
+      background-color: #00bff3
+    &-item
+      font-weight: 700
+      &__title
+        display: block
+
+        font-size: 12px
+        line-height: 18px
+        text-transform: uppercase
+        letter-spacing: 0.6px
+
+        color: #777777
+      &__rating
+        font-size: 18px
+
+  &-name
+    font-size: 35px
+    font-weight: 700
+    text-decoration: none
+
+    color: #000000
+    border-bottom: 1px solid #000000
+  &-stars
+    display: flex
+  &__stars
+    margin-left: 33px
+    margin-right: 32px
+  &__star
+    margin-right: 3px
+    &:last-child
+      margin-right: 0
+  &-cost
+    font-size: 35px
+    font-weight: 700
+    line-height: 30px
+  &-result
+    font-size: 14px
+    font-weight: 700
+    line-height: 18px
+
+    color: #000000
+    &__number
+      display: block
+      color: #777777
+.sun-days
+  display: flex
+  flex-direction: column
+  &__number
+    font-family: "Trebuchet MS"
+    font-size: 100px
+    font-weight: 400
+    line-height: 0.9
+
+    color: #777777
+  &__text
+    max-width: 166px
+
+    font-size: 30px
+    font-weight: 400
+    line-height: 32px
+@media (min-width: 1101px)
+  .sun-days
+    margin-right: 87px
+    &__text
+      padding-left: 7px
+      padding-top: 2px
+@media (max-width: 1100px)
+  .banner
+    background-size: contain
+    padding-top: 120px
+  .sun-days
+    &__number
+      font-size: 54px
+@media (max-width: 810px)
+  .banner
+    background-size: 700px
+    padding-top: 85px
+    &__under
+      flex-direction: column
+  .hotel
+    &-review
+      &-item
+        margin-top: 20px
+      &__bottom
+        flex-wrap: wrap
+    &-result
+      flex-basis: 77%
+  .hotel
+    &-name
+      font-size: 24px
+    &-cost
+      font-size: 26px
+  .sun-days
+    flex-direction: row
+    align-items: flex-end
+    margin-top: 15px
+    &__text
+      margin-left: 20px
+      max-width: 100%
+@media (max-width: 450px)
+  .hotel
+    &-review
+      &__top
+        flex-wrap: wrap
+        justify-content: space-between
+      &-item
+        flex-basis: 100%
+        display: flex
+        justify-content: space-between
+    &-stars
+      flex-basis: 100%
+      justify-content: center
+      margin: 20px 0 0
+
+      order: 1
+  .sun-days
+    &__number
+      font-size: 52px
+    &__text
+      font-size: 19px
+    

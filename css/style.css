@@ -17,19 +17,23 @@ img {
   margin: auto;
 }
 
+.br {
+  display: block;
+}
+
 @media (max-width: 1100px) {
   .container {
     max-width: 768px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 810px) {
   .container {
     max-width: 425px;
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   .container {
     max-width: 320px;
   }
@@ -131,7 +135,7 @@ img {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 810px) {
   .navbar {
     min-height: 70px;
   }
@@ -143,9 +147,304 @@ img {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   .navbar__image {
     max-width: 140px;
+  }
+}
+
+.banner {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-top: 275px;
+  background: url("../img/banner/banner.png") no-repeat top left;
+}
+
+.banner__under {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: -53px;
+}
+
+.banner-attention {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 230px;
+  height: 230px;
+  text-align: center;
+  background-color: rgba(255, 242, 0, 0.7);
+  border-radius: 50%;
+}
+
+.banner-attention__title {
+  width: 144px;
+  font-family: "Trebuchet MS";
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.banner-attention__subtitle {
+  margin-top: 9px;
+  margin-bottom: -4px;
+  font-family: "Trebuchet MS";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.banner-attention-code {
+  padding: 3px 7px 3px 6px;
+  font-family: "Trebuchet MS";
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.banner__attention {
+  margin-left: 28px;
+  margin-bottom: 80px;
+}
+
+.hotel-review__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 48px;
+  margin-bottom: 25px;
+  font-family: "Trebuchet MS";
+}
+
+.hotel-review__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hotel-review__rating {
+  padding: 17px 7px;
+  font-family: "Trebuchet MS";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #00bff3;
+}
+
+.hotel-review-item {
+  font-weight: 700;
+}
+
+.hotel-review-item__title {
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #777777;
+}
+
+.hotel-review-item__rating {
+  font-size: 18px;
+}
+
+.hotel-name {
+  font-size: 35px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000000;
+  border-bottom: 1px solid #000000;
+}
+
+.hotel-stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hotel__stars {
+  margin-left: 33px;
+  margin-right: 32px;
+}
+
+.hotel__star {
+  margin-right: 3px;
+}
+
+.hotel__star:last-child {
+  margin-right: 0;
+}
+
+.hotel-cost {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.hotel-result {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #000000;
+}
+
+.hotel-result__number {
+  display: block;
+  color: #777777;
+}
+
+.sun-days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sun-days__number {
+  font-family: "Trebuchet MS";
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 0.9;
+  color: #777777;
+}
+
+.sun-days__text {
+  max-width: 166px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+@media (min-width: 1101px) {
+  .sun-days {
+    margin-right: 87px;
+  }
+  .sun-days__text {
+    padding-left: 7px;
+    padding-top: 2px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .banner {
+    background-size: contain;
+    padding-top: 120px;
+  }
+  .sun-days__number {
+    font-size: 54px;
+  }
+}
+
+@media (max-width: 810px) {
+  .banner {
+    background-size: 700px;
+    padding-top: 85px;
+  }
+  .banner__under {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hotel-review-item {
+    margin-top: 20px;
+  }
+  .hotel-review__bottom {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .hotel-result {
+    -ms-flex-preferred-size: 77%;
+        flex-basis: 77%;
+  }
+  .hotel-name {
+    font-size: 24px;
+  }
+  .hotel-cost {
+    font-size: 26px;
+  }
+  .sun-days {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-top: 15px;
+  }
+  .sun-days__text {
+    margin-left: 20px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .hotel-review__top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hotel-review-item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hotel-stars {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 20px 0 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .sun-days__number {
+    font-size: 52px;
+  }
+  .sun-days__text {
+    font-size: 19px;
   }
 }
 /*# sourceMappingURL=style.css.map */
