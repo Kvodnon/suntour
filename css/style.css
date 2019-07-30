@@ -320,7 +320,7 @@ img {
   font-weight: 700;
   text-decoration: none;
   color: #000000;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .hotel-stars {
@@ -765,5 +765,17 @@ img {
   .main-text__quote {
     margin-left: 0;
   }
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 27px;
+  padding: 9px 0 30px;
+  border-top: 1px solid #777777;
 }
 /*# sourceMappingURL=style.css.map */
