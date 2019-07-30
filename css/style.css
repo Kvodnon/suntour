@@ -378,6 +378,10 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .banner-attention {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .hotel-review-item {
     margin-top: 20px;
   }
@@ -445,6 +449,135 @@ img {
   }
   .sun-days__text {
     font-size: 19px;
+  }
+}
+
+.extreme {
+  -ms-flex-preferred-size: 502px;
+      flex-basis: 502px;
+  height: 279px;
+  font-family: "Trebuchet MS";
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.extreme-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.extreme__list {
+  margin: 37px 0 66px;
+}
+
+.extreme__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.extreme-title {
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.extreme__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  min-height: 30px;
+  font-family: "Arial";
+  font-size: 14px;
+  font-weight: 400;
+  color: #777777;
+}
+
+.extreme__price {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.extreme__old-price {
+  position: relative;
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #777777;
+}
+
+.extreme__old-price:after {
+  position: absolute;
+  top: 50%;
+  left: -7px;
+  display: block;
+  width: 41px;
+  height: 1px;
+  background: #ff0000;
+  content: '';
+}
+
+@media (max-width: 1100px) {
+  .extreme {
+    -ms-flex-preferred-size: 365px;
+        flex-basis: 365px;
+  }
+  .extreme-title {
+    font-size: 24px;
+  }
+  .extreme__price {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 810px) {
+  .extreme {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 65px;
+  }
+  .extreme__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 450px) {
+  .extreme {
+    margin-bottom: 0;
+  }
+  .extreme-title {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 20px;
+  }
+  .extreme__price {
+    font-size: 28px;
+  }
+  .extreme__description {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,83 @@
+.extreme
+  flex-basis: 502px
+  height: 279px
+
+  font-family: "Trebuchet MS"
+
+  object-fit: contain
+  &-list
+    display: flex
+    justify-content: space-between
+  &__list
+    margin: 37px 0 66px
+  &__title
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+  &-title
+    font-size: 30px
+    font-weight: 700
+    text-decoration: none
+
+    color: #000000
+    border-bottom: 1px solid rgba(#000000, 0.2)
+  &__description
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    min-height: 30px
+
+    font-family: "Arial"
+    font-size: 14px
+    font-weight: 400
+
+    color: #777777
+  &__price
+    font-size: 50px
+    font-weight: 700
+  &__old-price
+    position: relative
+
+    display: block
+
+    font-size: 20px
+    font-weight: 400
+    line-height: 30px
+
+    color: #777777
+    &:after
+      position: absolute
+      top: 50%
+      left: -7px
+      
+      display: block
+      width: 41px
+      height: 1px
+
+      background: #ff0000
+
+      content: ''
+@media (max-width: 1100px)
+  .extreme
+    flex-basis: 365px
+    &-title
+      font-size: 24px
+    &__price
+      font-size: 40px
+@media (max-width: 810px)
+  .extreme
+    flex-basis: 100%
+    margin-bottom: 65px
+    &__list
+      flex-wrap: wrap
+@media (max-width: 450px)
+  .extreme
+    margin-bottom: 0
+    &-title
+      align-items: center
+      
+      font-size: 20px
+    &__price
+      font-size: 28px
+    &__description
+      align-items: center
