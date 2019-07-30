@@ -1,0 +1,118 @@
+.main
+  &__headline
+    margin-bottom: 5px
+  &-text
+    p
+      margin: 20px 0
+
+      font-size: 14px
+      line-height: 20px
+    &-title
+      display: block
+
+      font-size: 22px
+      font-weight: bold
+    &__title
+      margin-bottom: -10px
+    &-quote
+      margin: 15px 0
+      padding: 1px 10px
+
+      background-color: rgba($blue,0.06)
+      border-left: 3px solid #00bff3
+    &__quote
+      margin-left: 25px
+    &__list
+      padding: 0
+      margin-left: 10px
+
+      font-size: 14px
+      line-height: 24px
+
+      list-style-type: none
+  &-side
+    padding-top: 211px
+    padding-left: 55px
+    &__title
+      padding-right: 12px
+
+      font-family: "Trebuchet MS"
+      font-size: 100px
+      font-weight: 400
+
+      color: #777777
+    &__subtitle
+      display: block
+
+      font-family: "Trebuchet MS"
+      font-size: 30px
+      font-weight: 400
+      line-height: 32px
+    &-text
+      &__end
+        display: block
+
+        margin-left: -10px
+    &__text
+      max-width: 212px
+
+      font-family: "Trebuchet MS"
+      font-size: 20px
+      font-weight: 400
+      line-height: 24px
+
+      color: #777777
+.content
+  display: flex
+  justify-content: space-between
+.table
+  width: 100%
+  margin: 20px 0
+  padding-right: 20px
+
+  border-spacing: 0
+  &-head
+    background-color: #ebebeb
+    border-bottom: 1px solid #777777
+  td
+    padding: 7px 0 8px 25px
+
+    font-size: 14px
+
+    border-bottom: 1px solid #ebebeb
+    &:first-child
+      padding-left: 21px
+  tr
+    &:last-of-type
+      td
+        border: none
+  strong
+    font-size: 12px
+  &-th
+    padding: 10px 0 6px 25px
+
+    font-size: 12px
+    font-weight: bold
+    text-align-last: left
+
+    border-bottom: 1px solid #777777
+  &-tr
+    &-primary
+      border-top: 2px solid #ebebeb
+@media (max-width: 1100px)
+  .main
+    &-text
+      overflow: hidden
+  .table
+    display: block
+    overflow-x: scroll
+  .wrap
+    &-line
+      display: none
+@media (max-width: 810px)
+  .main
+    &-side
+      display: none
+    &-text
+      &__quote
+        margin-left: 0
