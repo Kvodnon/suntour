@@ -1,0 +1,70 @@
+.header
+  color: #ffffff
+  background-color: $blue
+.navbar
+  display: flex
+  justify-content: space-between
+  align-items: center
+  min-height: 105px
+  &__image
+    margin-right: 12px
+  &__logo
+    display: flex
+    align-items: center
+  &-description
+    max-width: 130px
+    align-self: flex-end
+
+    font-size: 16px
+    font-weight: 400
+    line-height: 20px
+  &__contacts
+    display: flex
+    align-items: center
+  &-phone
+    font-size: 30px
+    font-weight: 400
+    text-decoration: none
+
+    color: #ffffff
+  &-button
+    padding: 0
+
+    font-size: 16px
+    font-weight: 400
+    line-height: 20px
+
+    color: #ffffff
+    border: none
+    border-bottom: 1px dotted #ffffff
+    background-color: unset
+
+    cursor: pointer
+    outline: none
+  &__button
+    margin: 0 71px 0 34px
+  &__social
+    display: flex
+  &-social
+    &__link
+      margin-left: 10px
+      &:first-child
+        margin-left: 0
+
+@media (max-width: 1100px)
+  .navbar
+    &-phone
+      display: none
+    &-description
+      display: none
+@media (max-width: 768px)
+  .navbar
+    min-height: 70px
+    &__button
+      margin: 0
+    &__social
+      display: none
+@media (max-width: 425px)
+  .navbar
+    &__image
+      max-width: 140px

@@ -1,0 +1,151 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1040px;
+  width: 95%;
+  margin: auto;
+}
+
+@media (max-width: 1100px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 425px;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
+.header {
+  color: #ffffff;
+  background-color: #00bff3;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 105px;
+}
+
+.navbar__image {
+  margin-right: 12px;
+}
+
+.navbar__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-description {
+  max-width: 130px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.navbar__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-phone {
+  font-size: 30px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navbar-button {
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #ffffff;
+  border: none;
+  border-bottom: 1px dotted #ffffff;
+  background-color: unset;
+  cursor: pointer;
+  outline: none;
+}
+
+.navbar__button {
+  margin: 0 71px 0 34px;
+}
+
+.navbar__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar-social__link {
+  margin-left: 10px;
+}
+
+.navbar-social__link:first-child {
+  margin-left: 0;
+}
+
+@media (max-width: 1100px) {
+  .navbar-phone {
+    display: none;
+  }
+  .navbar-description {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    min-height: 70px;
+  }
+  .navbar__button {
+    margin: 0;
+  }
+  .navbar__social {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .navbar__image {
+    max-width: 140px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
